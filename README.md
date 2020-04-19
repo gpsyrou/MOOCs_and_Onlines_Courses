@@ -10,5 +10,14 @@ The courses are mainly focused (but not limited) around Computer Science and Dat
   1) **Introduction to Computer Science (CS50) - Harvard University - EdX** (https://online-learning.harvard.edu/course/cs50-introduction-computer-science)
 
 ## Courses Completed
-  1) **Machine Learning A-Z - Udemy** (https://github.com/gpsyrou/Machine_Learning_AZ)
-  2) **Tensorflow for Deep Learning with Python** (https://github.com/gpsyrou/Tensorfow-for-Deep-Learning-with-Python)
+
+#### Udemy:
+
+  1) **Machine Learning A-Z** (https://github.com/gpsyrou/Machine_Learning_AZ)
+  2) **Tensorflow for Deep Learning** (https://github.com/gpsyrou/Tensorfow-for-Deep-Learning-with-Python)
+  3) **Natural Language Processing in Python** (https://github.com/gpsyrou/Natural-Language-Processing-in-Python)
+  4) **Deep Learning A-Z** (https://github.com/gpsyrou/Deep-Learning-A-Z)
+
+#### Coursera:
+  
+  1) **Applied Machine Learning in Python** - University of Michigan (https://github.com/gpsyrou/Applied-Machine-Learning-with-Python)
