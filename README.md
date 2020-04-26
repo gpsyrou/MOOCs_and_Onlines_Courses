@@ -7,7 +7,10 @@ The courses are mainly focused (but not limited) around Computer Science and Dat
 # Log
 
 ## Courses In Progress
+
   1) **Introduction to Computer Science (CS50) - Harvard University - EdX** (https://online-learning.harvard.edu/course/cs50-introduction-computer-science)
+
+  2) **Java Programming Masterclass for Software Developers - Udemy** (https://www.udemy.com/course/java-the-complete-java-developer-course/)
 
 ## Courses Completed
 
