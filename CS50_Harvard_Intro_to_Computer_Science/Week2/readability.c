@@ -49,6 +49,14 @@ int count_sentences(string s)
 }
 
 
+float compute_average (s_l, words)
+{
+    float avg = (s_l * 100) / words;
+
+    return avg;
+}
+
+
 int main(void)
 {
     // Get input string from the user
@@ -63,8 +71,10 @@ int main(void)
     // Creating the Coleman-Liau index to find the Grade
     // L is the average number of letters per 100 words in the text, and S is the average number of sentences per 100 words in the text
 
-    // TODO: NEED TO COMPUTE L AND S
-    int index = 0.0588 * L - 0.296 * S - 15.8
+    float L = compute_average(character_cnt, word_cnt);
+    float S = compute_average(sentences_cnt, word_cnt);
+
+    int index = 0.0588 * L - 0.296 * S - 15.8;
 
     return 0;
 }
