@@ -13,7 +13,7 @@ int count_letters(string s)
     {
         if (isalpha(s[i]))
         {
-            count+=1;
+            count += 1;
         }
     }
     return count;
@@ -28,7 +28,7 @@ int count_words(string s)
     {
         if (isspace(s[i]))
         {
-            count+=1;
+            count += 1;
         }
     }
     return count;
@@ -42,7 +42,7 @@ int count_sentences(string s)
     {
         if (s[i] == '!' || s[i] == '.' || s[i] == '?')
         {
-            count+=1;
+            count += 1;
         }
     }
     return count;
@@ -50,9 +50,9 @@ int count_sentences(string s)
 
 // Function to compute the averages L and S
 // L is the average number of letters per 100 words in the text, and S is the average number of sentences per 100 words in the text
-float compute_average (s_l, words)
+float compute_average(value, words)
 {
-    float avg = (s_l * 100) / words;
+    float avg = (value * 100) / (float) words;
 
     return avg;
 }
@@ -76,13 +76,16 @@ int main(void)
     // Creating the Coleman-Liau index to find the Grade
     int index = round(0.0588 * L - 0.296 * S - 15.8);
 
-    if (index < 1){
+    if (index < 1)
+    {
         printf("Before Grade 1\n");
     }
-    else if (index < 16){
+    else if (index < 16)
+    {
         printf("Grade %d\n", index);
     }
-    else{
+    else
+    {
         printf("Grade 16+\n");
     }
 
