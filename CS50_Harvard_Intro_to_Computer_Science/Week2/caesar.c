@@ -3,6 +3,7 @@
 # include <string.h>
 # include <ctype.h>
 # include <math.h>
+# include <stdlib.h>
 
 int main (int argc, string argv[])
 {
@@ -22,6 +23,10 @@ int main (int argc, string argv[])
             return 1;
         }
     }
+
+    // Convert the command line argument from string to int
+    int input_value = atoi(argv[1]);
+    printf("The input as integer is: %i\n", input_value);
 
     return 0;
 }
