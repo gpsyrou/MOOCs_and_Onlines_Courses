@@ -9,6 +9,12 @@
 string get_plaintext()
 {
     string plaintext = get_string("plaintext:");
+    printf("The plaintext is: %s", plaintext);
+
+    for (int i = 0; i<strlen(plaintext); i++)
+    {
+
+    }
 
     return plaintext;
 }
