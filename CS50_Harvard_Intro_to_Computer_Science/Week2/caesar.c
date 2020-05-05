@@ -5,6 +5,15 @@
 # include <math.h>
 # include <stdlib.h>
 
+
+string get_plaintext()
+{
+    string plaintext = get_string("plaintext:");
+
+    return plaintext;
+}
+
+
 int main (int argc, string argv[])
 {
     // Handle the case where the user inputs less or more than 1 argument
@@ -27,6 +36,9 @@ int main (int argc, string argv[])
     // Convert the command line argument from string to int
     int input_value = atoi(argv[1]);
     printf("The input as integer is: %i\n", input_value);
+
+    // Prompt user for a plaintext
+    get_plaintext();
 
     return 0;
 }
