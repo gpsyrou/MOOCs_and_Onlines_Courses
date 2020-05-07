@@ -6,17 +6,21 @@
 # include <stdlib.h>
 
 
-string get_plaintext()
+string get_plaintext(int val)
 {
-    string s = get_string("plaintext:");
-    printf("The plaintext is: %s\n", s);
+    string p = get_string("plaintext:");
+    printf("The plaintext is: %s\n", p);
 
-    for (int i = 0; i < strlen(s); i++)
+    for (int i = 0; i < strlen(p); i++)
     {
-        printf("The character is: %c  and the corresponding ASCII number is %i\n", s[i],s[i]);
+        printf("The character is: %c  and the corresponding ASCII number is %i\n", p[i], p[i]);
+        int char_plus_key = p[i] + val;
+        printf("The cipher character(number) is: %i", char_plus_key);
     }
 
-    return s;
+    // ci = (pi + k) % 26 -> This gives us the c[i] character of the cipher text
+
+    return p;
 }
 
 
@@ -44,7 +48,7 @@ int main (int argc, string argv[])
     printf("The input as integer is: %i\n", input_value);
 
     // Prompt user for a plaintext
-    get_plaintext();
+    get_plaintext(input_value);
 
     return 0;
 }
