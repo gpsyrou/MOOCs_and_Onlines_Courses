@@ -13,7 +13,7 @@ string get_plaintext()
 
     for (int i = 0; i < strlen(s); i++)
     {
-        printf("The character is: %c\n", s[i]);
+        printf("The character is: %c  and the corresponding ASCII number is %i\n", s[i],s[i]);
     }
 
     return s;
