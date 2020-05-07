@@ -8,15 +8,15 @@
 
 string get_plaintext()
 {
-    string plaintext = get_string("plaintext:");
-    printf("The plaintext is: %s", plaintext);
+    string s = get_string("plaintext:");
+    printf("The plaintext is: %s\n", s);
 
-    for (int i = 0; i<strlen(plaintext); i++)
+    for (int i = 0; i < strlen(s); i++)
     {
-
+        printf("The character is: %c\n", s[i]);
     }
 
-    return plaintext;
+    return s;
 }
 
 
