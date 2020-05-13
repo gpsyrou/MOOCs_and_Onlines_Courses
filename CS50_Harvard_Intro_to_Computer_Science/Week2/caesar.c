@@ -11,22 +11,32 @@ string get_plaintext(int val)
     string p = get_string("plaintext:");
     printf("The plaintext is: %s\n", p);
 
+    int char_plus_key;
+
     for (int i = 0; i < strlen(p); i++)
     {
-        int char_plus_key = p[i] + val;
 
-        // Add condition to do a "cycle" if we violate the ASCII boundaries
-        if (char_plus_key > 90 && char_plus_key < 97)
+
+        if (isalpha(p[i]))
         {
-            char_plus_key = 64 + (char_plus_key - 90);
+             char_plus_key = p[i] + val;
+
+            // Add condition to do a "cycle" if we violate the ASCII boundaries
+            if (char_plus_key > 90 && char_plus_key < 97)
+            {
+                char_plus_key = 64 + (char_plus_key - 90);
+            }
+            else if (char_plus_key > 122)
+            {
+                char_plus_key = 96 + (char_plus_key - 122);
+            }
         }
-        else if (char_plus_key > 122)
+        else
         {
-            char_plus_key = 96 + (char_plus_key - 122);
+            char_plus_key = p[i];
         }
 
         printf("The character is: %c  and the corresponding ASCII number is: %i. The cipher character(number) after applying the key is: %i and as a character is: %c\n", p[i], p[i], char_plus_key, char_plus_key);
-
     }
 
     // ci = (pi + k) % 26 -> This gives us the c[i] character of the cipher text
