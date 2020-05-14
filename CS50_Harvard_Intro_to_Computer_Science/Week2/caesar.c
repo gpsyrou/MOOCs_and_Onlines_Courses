@@ -12,6 +12,7 @@ string get_plaintext(int val)
     printf("The plaintext is: %s\n", p);
 
     int char_plus_key;
+    char output[strlen(p)]; //This will hold the final output
 
     for (int i = 0; i < strlen(p); i++)
     {
@@ -30,17 +31,19 @@ string get_plaintext(int val)
             {
                 char_plus_key = 96 + (char_plus_key - 122);
             }
+
+
         }
         else
         {
             char_plus_key = p[i];
         }
-
+        output[i] = char_plus_key;
         printf("The character is: %c  and the corresponding ASCII number is: %i. The cipher character(number) after applying the key is: %i and as a character is: %c\n", p[i], p[i], char_plus_key, char_plus_key);
     }
 
     // ci = (pi + k) % 26 -> This gives us the c[i] character of the cipher text
-
+    printf("The output string is %s", output);
     return p;
 }
 
