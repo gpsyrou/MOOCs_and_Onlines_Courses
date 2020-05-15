@@ -7,7 +7,7 @@
 
 // Function that performs adds the key to the plain text
 // and returns the ciphertext
-string encrypt_plaintext(int val)
+void encrypt_plaintext(int val)
 {
     string p = get_string("plaintext:");
 
@@ -40,7 +40,6 @@ string encrypt_plaintext(int val)
     }
 
     printf("ciphertext: %s", output);
-    return p;
 }
 
 
