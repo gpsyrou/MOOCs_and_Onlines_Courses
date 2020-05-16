@@ -35,30 +35,24 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < strlen(p); i++)
     {
-        if (p[i] != '\n')
+
+        if (isalpha(p[i]))
         {
-            if (isalpha(p[i]))
+            if (p[i] >= 'a' && p[i] <= 'z')
             {
-                char_plus_key = p[i] + val;
-
-                // Add condition to do a "cycle" if we violate the ASCII boundaries
-                if (char_plus_key > 90 && char_plus_key < 97)
-                {
-                    char_plus_key = 64 + (char_plus_key - 90);
-                }
-                else if (char_plus_key > 122)
-                {
-                    char_plus_key = 96 + (char_plus_key - 122);
-                }
-
+                char_plus_key = (((p[i] - 'a') + val) % 26) + 'a';
             }
-            else
+            else if (p[i] >= 'A' && p[i] <= 'Z')
             {
-                char_plus_key = p[i];
+                char_plus_key = (((p[i] - 'A') + val) % 26) + 'A';
             }
-            // Convert the number to a characterand append it to the string
-            sprintf(&output[i], "%c", char_plus_key);;
         }
+        else
+        {
+            char_plus_key = p[i];
+        }
+        // Convert the number to a characterand append it to the string
+        sprintf(&output[i], "%c", char_plus_key);
     }
 
     // Print the final output for the ciphertext
