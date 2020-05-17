@@ -3,4 +3,5 @@
 # Log
   - Week0: TODO Scratch project
   - Week1: hello.c and mario.c (less) and cash(less) are done.
-  - Week2: readability.c is done.
+  - Week2: readability.c is done. Caesar (less) is done.
+  - Week3: plurality.c is done.
