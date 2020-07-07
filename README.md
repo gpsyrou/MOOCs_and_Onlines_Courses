@@ -12,6 +12,8 @@ The courses are mainly focused (but not limited) around Computer Science and Dat
 
   2) **Java Programming Masterclass for Software Developers - Udemy** (https://www.udemy.com/course/java-the-complete-java-developer-course/)
 
+  3) **The Complete 2020 Web Development Bootcamp - Udemy** (https://www.udemy.com/course/the-complete-web-development-bootcamp/)
+
 ## Courses Completed
 
 #### Udemy:
